@@ -1,7 +1,7 @@
 # CricketGPT — IPL Analyst Chatbot 🏏
 
 ## Live Demo
-https://your-vercel-url.vercel.app
+[https://your-vercel-url.vercel.app](https://cricket-gpt-indol.vercel.app/)
 
 ## What it does
 A purpose-built IPL chatbot powered by OpenRouter (NVIDIA Nemotron model).
