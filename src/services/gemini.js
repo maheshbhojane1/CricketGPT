@@ -9,7 +9,7 @@ export async function askIPLBot(messages) {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${API_KEY}`,
-        "HTTP-Referer": "http://localhost:5175",
+        "HTTP-Referer": "https://cricket-gpt-indol.vercel.app/",
         "X-Title": "CricketGPT",
       },
       body: JSON.stringify({
