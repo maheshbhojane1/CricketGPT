@@ -1,16 +1,33 @@
-# React + Vite
+# CricketGPT — IPL Analyst Chatbot 🏏
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+https://your-vercel-url.vercel.app
 
-Currently, two official plugins are available:
+## What it does
+A purpose-built IPL chatbot powered by OpenRouter (NVIDIA Nemotron model).
+Knows team histories, player stats, season records, and auction strategies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Why Cricket / IPL
+IPL is India's biggest sporting event — rich domain knowledge, 
+passionate users, and lots of interesting UI design decisions.
 
-## React Compiler
+## Stack
+- React + Vite
+- Pure CSS (no Tailwind or component libraries)
+- OpenRouter API — NVIDIA Nemotron 3 Super 120B (free tier)
+- Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Why OpenRouter instead of OpenAI or Gemini
+- OpenAI requires a paid plan — no free tier for GPT-4
+- Gemini free tier hits rate limits (429) very quickly
+- OpenRouter gives access to powerful free models with the 
+  same API interface as OpenAI — just swap the URL and model name
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Design decisions
+- Dark navy theme reflects cricket's night match culture
+- Orange accent matches IPL's brand color
+- Team pills have actual team colors (MI blue, CSK yellow, RCB red)
+- Suggested questions solve the blank slate UX problem
+- Typing indicator says "Analysing squad data" not just three dots
+- Error messages use cricket metaphors for personality
+- Messages animate in with fade + slide up
